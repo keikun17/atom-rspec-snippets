@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable rspec-snippets': 'rspec-snippets:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'rspec-snippets'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'rspec-snippets:toggle' }
+      ]
+    ]
+  }
+]

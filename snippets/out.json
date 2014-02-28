@@ -1,0 +1,1 @@
+{".source.coffee":{"Console log":{"prefix":"lottti","body":"console.log $1 ee"}},".source.ruby":{"Rspec describe":{"prefix":"des","body":"describe ${1:description} do\n  before do\n    $2\n  end\nend"}}}

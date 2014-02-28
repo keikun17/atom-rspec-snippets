@@ -1,0 +1,14 @@
+{
+  "name": "rspec-snippets",
+  "main": "./lib/rspec-snippets",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Atom.io package/fork of https://github.com/Trevoke/ultisnips-rspec",
+  "repository": "https://github.com/atom/rspec-snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}

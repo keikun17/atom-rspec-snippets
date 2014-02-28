@@ -1,0 +1,84 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+
+'.source.coffee':
+  'Console log':
+    'prefix': 'lottti'
+    'body': 'console.log $1 ee'
+
+# Ruby Rspec
+'.source.ruby':
+  'Spech Helper':
+    'prefix': 'spechelper'
+    'body': 'require \'spechelper\''
+
+'.source.ruby':
+  'Rspec describe':
+    'prefix': 'des'
+    'body': """
+        describe ${1:description} do
+          before do
+            $2
+          end
+        end
+      """
+
+  'Rspec describe class':
+    'prefix': 'desc'
+    'body': """
+        describe ${1:Class}, "${2:description}" do
+          before do
+            $2
+          end
+        end
+      """
+
+
+  'Rspec it':
+    'prefix': 'it'
+    'body': """
+        it "should ${1:description}" do
+          $2
+        end
+      """
+
+
+  'Rspec it should':
+    'prefix': 'itsh'
+    'body': """
+        it "should ${1:description}" do
+          ${2:model}.should ${3:something}
+        end
+      """
+
+
+  'Rspec it should be':
+    'prefix': 'itshbe'
+    'body': """
+        it 'should ${1:description}'' do
+          ${2:model}.should be_${3:something}
+        end
+      """
+
+
+  'Rspec should equal to':
+    'prefix': 'sheq'
+    'body': '${1:target}.should == ${2:value}'
+
+
+  'Rspec should be':
+    'prefix': 'shbe'
+    'body': '${1:target}.should be_${2:result}'
